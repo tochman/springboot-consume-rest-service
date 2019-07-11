@@ -34,7 +34,7 @@ public class Data {
         return this.last_name;
     }
 
-    public String getName(String first_name, String last_name) {
+    private String getName(String first_name, String last_name) {
         return first_name + " " + last_name;
     }
 

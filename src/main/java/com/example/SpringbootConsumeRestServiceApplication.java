@@ -12,12 +12,12 @@ public class SpringbootConsumeRestServiceApplication implements CommandLineRunne
 
     private static final Logger log = LoggerFactory.getLogger(SpringbootConsumeRestServiceApplication.class);
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         SpringApplication.run(SpringbootConsumeRestServiceApplication.class);
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         RestTemplate restTemplate = new RestTemplate();
         Employee instance = restTemplate.getForObject("https://reqres.in/api/users/2?delay=3", Employee.class);
         log.info(instance.toString());

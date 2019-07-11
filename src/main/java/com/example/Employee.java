@@ -6,8 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.text.MessageFormat;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-
-public class Employee {
+class Employee {
 
     private Data data;
 
